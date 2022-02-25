@@ -3,13 +3,12 @@ body{
 }
 
 h1{
-    color: #878787;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 28px;
-    margin-bottom: 0;
+    color: #e8e5f3;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 20px 0 10px;   
 }
-
 ul {
 margin: 0;
 padding: 0;
@@ -22,7 +21,7 @@ li {
     color: rgb(135, 135, 135);
     font-size: 16px;
     font-weight: 100;
-    line-height: 19px;
+    line-height: 30px;
   }
 
 li::first-letter {
@@ -32,12 +31,14 @@ text-transform: capitalize;
 .weather-app-wrapper{
     max-width: 600px;
     margin: 30px auto;
+  
 }
 
 .weather-app {
     padding: 20px;
     border: 1px solid #dadde1;
-    border-radius: 10px;
+    border-radius: 20px;
+    background: radial-gradient(263px at 100.2% 3%, rgb(12, 85, 141) 31.1%, rgb(205, 181, 93) 36.4%, rgb(244, 102, 90) 50.9%, rgb(199, 206, 187) 60.7%, rgb(249, 140, 69) 72.5%, rgb(12, 73, 116) 72.6%);    
 }
 
 .overview {
@@ -46,12 +47,13 @@ text-transform: capitalize;
 
 .weather-temperature img {
     margin-right: 10px;
-    height: 64px;
-    width: 64px;
+    height: 100px;
+    width: 100px;
+    float: left;
 }
 
 .weather-temperature strong {
-    color: rgb(33, 33, 33);
+    color: #e8e5f3;
     font-size: 64px;
     line-height: 1;
     font-weight: 400;
