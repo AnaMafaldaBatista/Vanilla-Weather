@@ -1,13 +1,14 @@
 body{
-    font-family: Arial, Helvetica, sans-serif
+    font-family: monospace
 }
 
 h1{
     color: #e8e5f3;
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-    margin: 20px 0 10px;   
+    margin: 20px 0 10px; 
+      
 }
 ul {
 margin: 0;
@@ -18,11 +19,16 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: rgb(135, 135, 135);
-    font-size: 16px;
+    color: #a5a4a4;
+    font-size: 17px;
     font-weight: 100;
     line-height: 30px;
   }
+
+  hr {
+    height: 10px;
+    color: #e8e5f3; 
+    }
 
 li::first-letter {
 text-transform: capitalize;
@@ -31,14 +37,31 @@ text-transform: capitalize;
 .weather-app-wrapper{
     max-width: 600px;
     margin: 30px auto;
-  
+    
 }
 
 .weather-app {
     padding: 20px;
     border: 1px solid #dadde1;
     border-radius: 20px;
-    background: radial-gradient(263px at 100.2% 3%, rgb(12, 85, 141) 31.1%, rgb(205, 181, 93) 36.4%, rgb(244, 102, 90) 50.9%, rgb(199, 206, 187) 60.7%, rgb(249, 140, 69) 72.5%, rgb(12, 73, 116) 72.6%);    
+    background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+
+   }
+    
+.weather-app .form-control {
+    padding: 10px 10px;
+    background: #EDF5FD;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn {
+    background: #56a0ee;
+    padding: 10px 0;
+    color: #EDF5FD;
+    border: none;
+    font-weight: 600;
+    letter-spacing: .5px;
 }
 
 .overview {
@@ -60,6 +83,7 @@ text-transform: capitalize;
 }
 
 .weather-temperature .units {
+color: #e8e5f3;
 position: relative;
 font-size: 16px;
 top: -34px;
@@ -79,14 +103,26 @@ color: #e8e5f3;
 }
 
 .weather-forecast-date {
-font-size: 18px;
-opacity: 0.5;
+font-size: 16px;
+opacity: 0.6;
 }
 
 .weather-forecast-temperature-min{
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
 font-size: 15px;
+}
+
+
+.weather-app-wrapper footer {
+    opacity: 0.5;
+    text-align: center;
+}
+
+
+.weather-app-wrapper footer a {
+    color: #56a0ee;
+    text-decoration: none;
 }
